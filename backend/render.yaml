@@ -1,6 +1,7 @@
 services:
   - type: web
     name: jira-clone-api
+    plan: free
     env: python
     region: oregon
     buildCommand: "pip install -r requirements.txt"
@@ -17,4 +18,5 @@ services:
 
 databases:
   - name: jira-clone-db
+    plan: free
     region: oregon
